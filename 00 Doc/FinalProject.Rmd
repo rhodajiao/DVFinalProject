@@ -1,0 +1,12 @@
+---
+title: "FinalProject"
+output: html_document
+---
+
+Rhoda Jiao and Maytee Chantharayukhont
+
+```{r}
+
+```
+
+

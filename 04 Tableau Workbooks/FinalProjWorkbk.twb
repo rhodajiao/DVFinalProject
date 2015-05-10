@@ -1,0 +1,2087 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='win' version='8.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 8300.15.0219.2230                                -->
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='BREAST_FEMALE_INCIDENCE+ (C##CS329E_RJ6793)' inline='true' name='oracle.42133.778098773146' version='8.3'>
+      <connection authentication='RDBMS' class='oracle' port='1521' schema='C##CS329E_RJ6793' server='129.152.144.84' service='ORCL.usuniversi01134.oraclecloud.internal' username='C##cs329e_rj6793'>
+        <relation join='left' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+              </expression>
+              <expression op='[HDI].[COUNTRY]'>
+              </expression>
+            </expression>
+          </clause>
+          <relation join='left' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                </expression>
+                <expression op='[GDPBREAKDOWN].[COUNTRY]'>
+                </expression>
+              </expression>
+            </clause>
+            <relation join='full' type='join'>
+              <clause type='join'>
+                <expression op='AND'>
+                  <expression op='='>
+                    <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                    </expression>
+                    <expression op='[STOMACH_MALE_MORTALITY].[COUNTRY]'>
+                    </expression>
+                  </expression>
+                  <expression op='='>
+                    <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                    </expression>
+                    <expression op='[STOMACH_MALE_MORTALITY].[YEAR]'>
+                    </expression>
+                  </expression>
+                </expression>
+              </clause>
+              <relation join='full' type='join'>
+                <clause type='join'>
+                  <expression op='AND'>
+                    <expression op='='>
+                      <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                      </expression>
+                      <expression op='[STOMACH_MALE_INCIDENCE].[COUNTRY]'>
+                      </expression>
+                    </expression>
+                    <expression op='='>
+                      <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                      </expression>
+                      <expression op='[STOMACH_MALE_INCIDENCE].[YEAR]'>
+                      </expression>
+                    </expression>
+                  </expression>
+                </clause>
+                <relation join='full' type='join'>
+                  <clause type='join'>
+                    <expression op='AND'>
+                      <expression op='='>
+                        <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                        </expression>
+                        <expression op='[STOMACH_FEMALE_MORTALITY].[COUNTRY]'>
+                        </expression>
+                      </expression>
+                      <expression op='='>
+                        <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                        </expression>
+                        <expression op='[STOMACH_FEMALE_MORTALITY].[YEAR]'>
+                        </expression>
+                      </expression>
+                    </expression>
+                  </clause>
+                  <relation join='full' type='join'>
+                    <clause type='join'>
+                      <expression op='AND'>
+                        <expression op='='>
+                          <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                          </expression>
+                          <expression op='[STOMACH_FEMALE_INCIDENCE].[COUNTRY]'>
+                          </expression>
+                        </expression>
+                        <expression op='='>
+                          <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                          </expression>
+                          <expression op='[STOMACH_FEMALE_INCIDENCE].[YEAR]'>
+                          </expression>
+                        </expression>
+                      </expression>
+                    </clause>
+                    <relation join='full' type='join'>
+                      <clause type='join'>
+                        <expression op='AND'>
+                          <expression op='='>
+                            <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                            </expression>
+                            <expression op='[PROSTATE_MALE_MORTALITY].[COUNTRY]'>
+                            </expression>
+                          </expression>
+                          <expression op='='>
+                            <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                            </expression>
+                            <expression op='[PROSTATE_MALE_MORTALITY].[YEAR]'>
+                            </expression>
+                          </expression>
+                        </expression>
+                      </clause>
+                      <relation join='full' type='join'>
+                        <clause type='join'>
+                          <expression op='AND'>
+                            <expression op='='>
+                              <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                              </expression>
+                              <expression op='[PROSTATE_MALE_INCIDENCE].[COUNTRY]'>
+                              </expression>
+                            </expression>
+                            <expression op='='>
+                              <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                              </expression>
+                              <expression op='[PROSTATE_MALE_INCIDENCE].[YEAR]'>
+                              </expression>
+                            </expression>
+                          </expression>
+                        </clause>
+                        <relation join='full' type='join'>
+                          <clause type='join'>
+                            <expression op='AND'>
+                              <expression op='='>
+                                <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                </expression>
+                                <expression op='[LUNG_MALE_MORTALITY].[COUNTRY]'>
+                                </expression>
+                              </expression>
+                              <expression op='='>
+                                <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                </expression>
+                                <expression op='[LUNG_MALE_MORTALITY].[YEAR]'>
+                                </expression>
+                              </expression>
+                            </expression>
+                          </clause>
+                          <relation join='full' type='join'>
+                            <clause type='join'>
+                              <expression op='AND'>
+                                <expression op='='>
+                                  <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                  </expression>
+                                  <expression op='[LUNG_MALE_INCIDENCE].[COUNTRY]'>
+                                  </expression>
+                                </expression>
+                                <expression op='='>
+                                  <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                  </expression>
+                                  <expression op='[LUNG_MALE_INCIDENCE].[YEAR]'>
+                                  </expression>
+                                </expression>
+                              </expression>
+                            </clause>
+                            <relation join='full' type='join'>
+                              <clause type='join'>
+                                <expression op='AND'>
+                                  <expression op='='>
+                                    <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                    </expression>
+                                    <expression op='[LUNG_FEMALE_MORTALITY].[COUNTRY]'>
+                                    </expression>
+                                  </expression>
+                                  <expression op='='>
+                                    <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                    </expression>
+                                    <expression op='[LUNG_FEMALE_MORTALITY].[YEAR]'>
+                                    </expression>
+                                  </expression>
+                                </expression>
+                              </clause>
+                              <relation join='full' type='join'>
+                                <clause type='join'>
+                                  <expression op='AND'>
+                                    <expression op='='>
+                                      <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                      </expression>
+                                      <expression op='[LUNG_FEMALE_INCIDENCE].[COUNTRY]'>
+                                      </expression>
+                                    </expression>
+                                    <expression op='='>
+                                      <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                      </expression>
+                                      <expression op='[LUNG_FEMALE_INCIDENCE].[YEAR]'>
+                                      </expression>
+                                    </expression>
+                                  </expression>
+                                </clause>
+                                <relation join='full' type='join'>
+                                  <clause type='join'>
+                                    <expression op='AND'>
+                                      <expression op='='>
+                                        <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                        </expression>
+                                        <expression op='[LIVER_MALE_MORTALITY].[COUNTRY]'>
+                                        </expression>
+                                      </expression>
+                                      <expression op='='>
+                                        <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                        </expression>
+                                        <expression op='[LIVER_MALE_MORTALITY].[YEAR]'>
+                                        </expression>
+                                      </expression>
+                                    </expression>
+                                  </clause>
+                                  <relation join='full' type='join'>
+                                    <clause type='join'>
+                                      <expression op='AND'>
+                                        <expression op='='>
+                                          <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                          </expression>
+                                          <expression op='[LIVER_FEMALE_MORTALITY].[COUNTRY]'>
+                                          </expression>
+                                        </expression>
+                                        <expression op='='>
+                                          <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                          </expression>
+                                          <expression op='[LIVER_FEMALE_MORTALITY].[YEAR]'>
+                                          </expression>
+                                        </expression>
+                                      </expression>
+                                    </clause>
+                                    <relation join='full' type='join'>
+                                      <clause type='join'>
+                                        <expression op='AND'>
+                                          <expression op='='>
+                                            <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                            </expression>
+                                            <expression op='[LIVER_MALE_INCIDENCE].[COUNTRY]'>
+                                            </expression>
+                                          </expression>
+                                          <expression op='='>
+                                            <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                            </expression>
+                                            <expression op='[LIVER_MALE_INCIDENCE].[YEAR]'>
+                                            </expression>
+                                          </expression>
+                                        </expression>
+                                      </clause>
+                                      <relation join='full' type='join'>
+                                        <clause type='join'>
+                                          <expression op='AND'>
+                                            <expression op='='>
+                                              <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                              </expression>
+                                              <expression op='[LIVER_FEMALE_INCIDENCE].[COUNTRY]'>
+                                              </expression>
+                                            </expression>
+                                            <expression op='='>
+                                              <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                              </expression>
+                                              <expression op='[LIVER_FEMALE_INCIDENCE].[YEAR]'>
+                                              </expression>
+                                            </expression>
+                                          </expression>
+                                        </clause>
+                                        <relation join='full' type='join'>
+                                          <clause type='join'>
+                                            <expression op='AND'>
+                                              <expression op='='>
+                                                <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                                </expression>
+                                                <expression op='[COLON_MALE_MORTALITY].[COUNTRY]'>
+                                                </expression>
+                                              </expression>
+                                              <expression op='='>
+                                                <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                                </expression>
+                                                <expression op='[COLON_MALE_MORTALITY].[YEAR]'>
+                                                </expression>
+                                              </expression>
+                                            </expression>
+                                          </clause>
+                                          <relation join='full' type='join'>
+                                            <clause type='join'>
+                                              <expression op='AND'>
+                                                <expression op='='>
+                                                  <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                                  </expression>
+                                                  <expression op='[COLON_MALE_INCIDENCE].[COUNTRY]'>
+                                                  </expression>
+                                                </expression>
+                                                <expression op='='>
+                                                  <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                                  </expression>
+                                                  <expression op='[COLON_MALE_INCIDENCE].[YEAR]'>
+                                                  </expression>
+                                                </expression>
+                                              </expression>
+                                            </clause>
+                                            <relation join='full' type='join'>
+                                              <clause type='join'>
+                                                <expression op='AND'>
+                                                  <expression op='='>
+                                                    <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                                    </expression>
+                                                    <expression op='[COLON_FEMALE_MORTALITY].[COUNTRY]'>
+                                                    </expression>
+                                                  </expression>
+                                                  <expression op='='>
+                                                    <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                                    </expression>
+                                                    <expression op='[COLON_FEMALE_MORTALITY].[YEAR]'>
+                                                    </expression>
+                                                  </expression>
+                                                </expression>
+                                              </clause>
+                                              <relation join='full' type='join'>
+                                                <clause type='join'>
+                                                  <expression op='AND'>
+                                                    <expression op='='>
+                                                      <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                                      </expression>
+                                                      <expression op='[COLON_FEMALE_INCIDENCE].[COUNTRY]'>
+                                                      </expression>
+                                                    </expression>
+                                                    <expression op='='>
+                                                      <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                                      </expression>
+                                                      <expression op='[COLON_FEMALE_INCIDENCE].[YEAR]'>
+                                                      </expression>
+                                                    </expression>
+                                                  </expression>
+                                                </clause>
+                                                <relation join='full' type='join'>
+                                                  <clause type='join'>
+                                                    <expression op='AND'>
+                                                      <expression op='='>
+                                                        <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                                        </expression>
+                                                        <expression op='[CERVIX_FEMALE_MORTALITY].[COUNTRY]'>
+                                                        </expression>
+                                                      </expression>
+                                                      <expression op='='>
+                                                        <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                                        </expression>
+                                                        <expression op='[CERVIX_FEMALE_MORTALITY].[YEAR]'>
+                                                        </expression>
+                                                      </expression>
+                                                    </expression>
+                                                  </clause>
+                                                  <relation join='full' type='join'>
+                                                    <clause type='join'>
+                                                      <expression op='AND'>
+                                                        <expression op='='>
+                                                          <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                                          </expression>
+                                                          <expression op='[CERVIX_FEMALE_INCIDENCE].[COUNTRY]'>
+                                                          </expression>
+                                                        </expression>
+                                                        <expression op='='>
+                                                          <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                                          </expression>
+                                                          <expression op='[CERVIX_FEMALE_INCIDENCE].[YEAR]'>
+                                                          </expression>
+                                                        </expression>
+                                                      </expression>
+                                                    </clause>
+                                                    <relation join='full' type='join'>
+                                                      <clause type='join'>
+                                                        <expression op='AND'>
+                                                          <expression op='='>
+                                                            <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                                            </expression>
+                                                            <expression op='[BREAST_FEMALE_MORTALITY].[COUNTRY]'>
+                                                            </expression>
+                                                          </expression>
+                                                          <expression op='='>
+                                                            <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                                            </expression>
+                                                            <expression op='[BREAST_FEMALE_MORTALITY].[YEAR]'>
+                                                            </expression>
+                                                          </expression>
+                                                        </expression>
+                                                      </clause>
+                                                      <relation join='full' type='join'>
+                                                        <clause type='join'>
+                                                          <expression op='AND'>
+                                                            <expression op='='>
+                                                              <expression op='[LIFE_EXPECTANCY].[COUNTRY]'>
+                                                              </expression>
+                                                              <expression op='[BREAST_FEMALE_INCIDENCE].[COUNTRY]'>
+                                                              </expression>
+                                                            </expression>
+                                                            <expression op='='>
+                                                              <expression op='[LIFE_EXPECTANCY].[YEAR]'>
+                                                              </expression>
+                                                              <expression op='[BREAST_FEMALE_INCIDENCE].[YEAR]'>
+                                                              </expression>
+                                                            </expression>
+                                                          </expression>
+                                                        </clause>
+                                                        <relation name='LIFE_EXPECTANCY' table='[C##CS329E_RJ6793].[LIFE_EXPECTANCY]' type='table' />
+                                                        <relation name='BREAST_FEMALE_INCIDENCE' table='[C##CS329E_RJ6793].[BREAST_FEMALE_INCIDENCE]' type='table' />
+                                                      </relation>
+                                                      <relation name='BREAST_FEMALE_MORTALITY' table='[C##CS329E_RJ6793].[BREAST_FEMALE_MORTALITY]' type='table' />
+                                                    </relation>
+                                                    <relation name='CERVIX_FEMALE_INCIDENCE' table='[C##CS329E_RJ6793].[CERVIX_FEMALE_INCIDENCE]' type='table' />
+                                                  </relation>
+                                                  <relation name='CERVIX_FEMALE_MORTALITY' table='[C##CS329E_RJ6793].[CERVIX_FEMALE_MORTALITY]' type='table' />
+                                                </relation>
+                                                <relation name='COLON_FEMALE_INCIDENCE' table='[C##CS329E_RJ6793].[COLON_FEMALE_INCIDENCE]' type='table' />
+                                              </relation>
+                                              <relation name='COLON_FEMALE_MORTALITY' table='[C##CS329E_RJ6793].[COLON_FEMALE_MORTALITY]' type='table' />
+                                            </relation>
+                                            <relation name='COLON_MALE_INCIDENCE' table='[C##CS329E_RJ6793].[COLON_MALE_INCIDENCE]' type='table' />
+                                          </relation>
+                                          <relation name='COLON_MALE_MORTALITY' table='[C##CS329E_RJ6793].[COLON_MALE_MORTALITY]' type='table' />
+                                        </relation>
+                                        <relation name='LIVER_FEMALE_INCIDENCE' table='[C##CS329E_RJ6793].[LIVER_FEMALE_INCIDENCE]' type='table' />
+                                      </relation>
+                                      <relation name='LIVER_MALE_INCIDENCE' table='[C##CS329E_RJ6793].[LIVER_MALE_INCIDENCE]' type='table' />
+                                    </relation>
+                                    <relation name='LIVER_FEMALE_MORTALITY' table='[C##CS329E_RJ6793].[LIVER_FEMALE_MORTALITY]' type='table' />
+                                  </relation>
+                                  <relation name='LIVER_MALE_MORTALITY' table='[C##CS329E_RJ6793].[LIVER_MALE_MORTALITY]' type='table' />
+                                </relation>
+                                <relation name='LUNG_FEMALE_INCIDENCE' table='[C##CS329E_RJ6793].[LUNG_FEMALE_INCIDENCE]' type='table' />
+                              </relation>
+                              <relation name='LUNG_FEMALE_MORTALITY' table='[C##CS329E_RJ6793].[LUNG_FEMALE_MORTALITY]' type='table' />
+                            </relation>
+                            <relation name='LUNG_MALE_INCIDENCE' table='[C##CS329E_RJ6793].[LUNG_MALE_INCIDENCE]' type='table' />
+                          </relation>
+                          <relation name='LUNG_MALE_MORTALITY' table='[C##CS329E_RJ6793].[LUNG_MALE_MORTALITY]' type='table' />
+                        </relation>
+                        <relation name='PROSTATE_MALE_INCIDENCE' table='[C##CS329E_RJ6793].[PROSTATE_MALE_INCIDENCE]' type='table' />
+                      </relation>
+                      <relation name='PROSTATE_MALE_MORTALITY' table='[C##CS329E_RJ6793].[PROSTATE_MALE_MORTALITY]' type='table' />
+                    </relation>
+                    <relation name='STOMACH_FEMALE_INCIDENCE' table='[C##CS329E_RJ6793].[STOMACH_FEMALE_INCIDENCE]' type='table' />
+                  </relation>
+                  <relation name='STOMACH_FEMALE_MORTALITY' table='[C##CS329E_RJ6793].[STOMACH_FEMALE_MORTALITY]' type='table' />
+                </relation>
+                <relation name='STOMACH_MALE_INCIDENCE' table='[C##CS329E_RJ6793].[STOMACH_MALE_INCIDENCE]' type='table' />
+              </relation>
+              <relation name='STOMACH_MALE_MORTALITY' table='[C##CS329E_RJ6793].[STOMACH_MALE_MORTALITY]' type='table' />
+            </relation>
+            <relation name='GDPBREAKDOWN' table='[C##CS329E_RJ6793].[GDPBREAKDOWN]' type='table' />
+          </relation>
+          <relation name='HDI' table='[C##CS329E_RJ6793].[HDI]' type='table' />
+        </relation>
+        <cols>
+          <map key='[AGRICULTURESHAREGDP]' value='[GDPBREAKDOWN].[AGRICULTURESHAREGDP]' />
+          <map key='[BREAST_FEMALE_INCIDENCE]' value='[BREAST_FEMALE_INCIDENCE].[BREAST_FEMALE_INCIDENCE]' />
+          <map key='[BREAST_FEMALE_MORTALITY]' value='[BREAST_FEMALE_MORTALITY].[BREAST_FEMALE_MORTALITY]' />
+          <map key='[CERVIX_FEMALE_INCIDENCE]' value='[CERVIX_FEMALE_INCIDENCE].[CERVIX_FEMALE_INCIDENCE]' />
+          <map key='[CERVIX_FEMALE_MORTALITY]' value='[CERVIX_FEMALE_MORTALITY].[CERVIX_FEMALE_MORTALITY]' />
+          <map key='[COLON_FEMALE_INCIDENCE]' value='[COLON_FEMALE_INCIDENCE].[COLON_FEMALE_INCIDENCE]' />
+          <map key='[COLON_FEMALE_MORTALITY]' value='[COLON_FEMALE_MORTALITY].[COLON_FEMALE_MORTALITY]' />
+          <map key='[COLON_MALE_INCIDENCE]' value='[COLON_MALE_INCIDENCE].[COLON_MALE_INCIDENCE]' />
+          <map key='[COLON_MALE_MORTALITY]' value='[COLON_MALE_MORTALITY].[COLON_MALE_MORTALITY]' />
+          <map key='[COUNTRY (BREAST_FEMALE_INCIDENCE)]' value='[BREAST_FEMALE_INCIDENCE].[COUNTRY]' />
+          <map key='[COUNTRY (BREAST_FEMALE_MORTALITY)]' value='[BREAST_FEMALE_MORTALITY].[COUNTRY]' />
+          <map key='[COUNTRY (CERVIX_FEMALE_INCIDENCE)]' value='[CERVIX_FEMALE_INCIDENCE].[COUNTRY]' />
+          <map key='[COUNTRY (CERVIX_FEMALE_MORTALITY)]' value='[CERVIX_FEMALE_MORTALITY].[COUNTRY]' />
+          <map key='[COUNTRY (COLON_FEMALE_INCIDENCE)]' value='[COLON_FEMALE_INCIDENCE].[COUNTRY]' />
+          <map key='[COUNTRY (COLON_FEMALE_MORTALITY)]' value='[COLON_FEMALE_MORTALITY].[COUNTRY]' />
+          <map key='[COUNTRY (COLON_MALE_INCIDENCE)]' value='[COLON_MALE_INCIDENCE].[COUNTRY]' />
+          <map key='[COUNTRY (COLON_MALE_MORTALITY)]' value='[COLON_MALE_MORTALITY].[COUNTRY]' />
+          <map key='[COUNTRY (GDPBREAKDOWN)]' value='[GDPBREAKDOWN].[COUNTRY]' />
+          <map key='[COUNTRY (HDI)]' value='[HDI].[COUNTRY]' />
+          <map key='[COUNTRY (LIVER_FEMALE_INCIDENCE)]' value='[LIVER_FEMALE_INCIDENCE].[COUNTRY]' />
+          <map key='[COUNTRY (LIVER_FEMALE_MORTALITY)]' value='[LIVER_FEMALE_MORTALITY].[COUNTRY]' />
+          <map key='[COUNTRY (LIVER_MALE_INCIDENCE)]' value='[LIVER_MALE_INCIDENCE].[COUNTRY]' />
+          <map key='[COUNTRY (LIVER_MALE_MORTALITY)]' value='[LIVER_MALE_MORTALITY].[COUNTRY]' />
+          <map key='[COUNTRY (LUNG_FEMALE_INCIDENCE)]' value='[LUNG_FEMALE_INCIDENCE].[COUNTRY]' />
+          <map key='[COUNTRY (LUNG_FEMALE_MORTALITY)]' value='[LUNG_FEMALE_MORTALITY].[COUNTRY]' />
+          <map key='[COUNTRY (LUNG_MALE_INCIDENCE)]' value='[LUNG_MALE_INCIDENCE].[COUNTRY]' />
+          <map key='[COUNTRY (LUNG_MALE_MORTALITY)]' value='[LUNG_MALE_MORTALITY].[COUNTRY]' />
+          <map key='[COUNTRY (PROSTATE_MALE_INCIDENCE)]' value='[PROSTATE_MALE_INCIDENCE].[COUNTRY]' />
+          <map key='[COUNTRY (PROSTATE_MALE_MORTALITY)]' value='[PROSTATE_MALE_MORTALITY].[COUNTRY]' />
+          <map key='[COUNTRY (STOMACH_FEMALE_INCIDENCE)]' value='[STOMACH_FEMALE_INCIDENCE].[COUNTRY]' />
+          <map key='[COUNTRY (STOMACH_FEMALE_MORTALITY)]' value='[STOMACH_FEMALE_MORTALITY].[COUNTRY]' />
+          <map key='[COUNTRY (STOMACH_MALE_INCIDENCE)]' value='[STOMACH_MALE_INCIDENCE].[COUNTRY]' />
+          <map key='[COUNTRY (STOMACH_MALE_MORTALITY)]' value='[STOMACH_MALE_MORTALITY].[COUNTRY]' />
+          <map key='[COUNTRY]' value='[LIFE_EXPECTANCY].[COUNTRY]' />
+          <map key='[HDICATEGORY]' value='[HDI].[HDICATEGORY]' />
+          <map key='[HDINUMBER]' value='[HDI].[HDINUMBER]' />
+          <map key='[INDUSTRYSHAREGDP]' value='[GDPBREAKDOWN].[INDUSTRYSHAREGDP]' />
+          <map key='[LIFE_EXPECTANCY]' value='[LIFE_EXPECTANCY].[LIFE_EXPECTANCY]' />
+          <map key='[LIVER_FEMALE_INCIDENCE]' value='[LIVER_FEMALE_INCIDENCE].[LIVER_FEMALE_INCIDENCE]' />
+          <map key='[LIVER_FEMALE_MORTALITY]' value='[LIVER_FEMALE_MORTALITY].[LIVER_FEMALE_MORTALITY]' />
+          <map key='[LIVER_MALE_INCIDENCE]' value='[LIVER_MALE_INCIDENCE].[LIVER_MALE_INCIDENCE]' />
+          <map key='[LIVER_MALE_MORTALITY]' value='[LIVER_MALE_MORTALITY].[LIVER_MALE_MORTALITY]' />
+          <map key='[LUNG_FEMALE_INCIDENCE]' value='[LUNG_FEMALE_INCIDENCE].[LUNG_FEMALE_INCIDENCE]' />
+          <map key='[LUNG_FEMALE_MORTALITY]' value='[LUNG_FEMALE_MORTALITY].[LUNG_FEMALE_MORTALITY]' />
+          <map key='[LUNG_MALE_INCIDENCE]' value='[LUNG_MALE_INCIDENCE].[LUNG_MALE_INCIDENCE]' />
+          <map key='[LUNG_MALE_MORTALITY]' value='[LUNG_MALE_MORTALITY].[LUNG_MALE_MORTALITY]' />
+          <map key='[PROSTATE_MALE_INCIDENCE]' value='[PROSTATE_MALE_INCIDENCE].[PROSTATE_MALE_INCIDENCE]' />
+          <map key='[PROSTATE_MALE_MORTALITY]' value='[PROSTATE_MALE_MORTALITY].[PROSTATE_MALE_MORTALITY]' />
+          <map key='[RANK1SECTOR]' value='[GDPBREAKDOWN].[RANK1SECTOR]' />
+          <map key='[RANK2SECTOR]' value='[GDPBREAKDOWN].[RANK2SECTOR]' />
+          <map key='[RANK3SECTOR]' value='[GDPBREAKDOWN].[RANK3SECTOR]' />
+          <map key='[SERVICESSHAREGDP]' value='[GDPBREAKDOWN].[SERVICESSHAREGDP]' />
+          <map key='[STOMACH_FEMALE_INCIDENCE]' value='[STOMACH_FEMALE_INCIDENCE].[STOMACH_FEMALE_INCIDENCE]' />
+          <map key='[STOMACH_FEMALE_MORTALITY]' value='[STOMACH_FEMALE_MORTALITY].[STOMACH_FEMALE_MORTALITY]' />
+          <map key='[STOMACH_MALE_INCIDENCE]' value='[STOMACH_MALE_INCIDENCE].[STOMACH_MALE_INCIDENCE]' />
+          <map key='[STOMACH_MALE_MORTALITY]' value='[STOMACH_MALE_MORTALITY].[STOMACH_MALE_MORTALITY]' />
+          <map key='[YEAR (BREAST_FEMALE_INCIDENCE)]' value='[BREAST_FEMALE_INCIDENCE].[YEAR]' />
+          <map key='[YEAR (BREAST_FEMALE_MORTALITY)]' value='[BREAST_FEMALE_MORTALITY].[YEAR]' />
+          <map key='[YEAR (CERVIX_FEMALE_INCIDENCE)]' value='[CERVIX_FEMALE_INCIDENCE].[YEAR]' />
+          <map key='[YEAR (CERVIX_FEMALE_MORTALITY)]' value='[CERVIX_FEMALE_MORTALITY].[YEAR]' />
+          <map key='[YEAR (COLON_FEMALE_INCIDENCE)]' value='[COLON_FEMALE_INCIDENCE].[YEAR]' />
+          <map key='[YEAR (COLON_FEMALE_MORTALITY)]' value='[COLON_FEMALE_MORTALITY].[YEAR]' />
+          <map key='[YEAR (COLON_MALE_INCIDENCE)]' value='[COLON_MALE_INCIDENCE].[YEAR]' />
+          <map key='[YEAR (COLON_MALE_MORTALITY)]' value='[COLON_MALE_MORTALITY].[YEAR]' />
+          <map key='[YEAR (LIVER_FEMALE_INCIDENCE)]' value='[LIVER_FEMALE_INCIDENCE].[YEAR]' />
+          <map key='[YEAR (LIVER_FEMALE_MORTALITY)]' value='[LIVER_FEMALE_MORTALITY].[YEAR]' />
+          <map key='[YEAR (LIVER_MALE_INCIDENCE)]' value='[LIVER_MALE_INCIDENCE].[YEAR]' />
+          <map key='[YEAR (LIVER_MALE_MORTALITY)]' value='[LIVER_MALE_MORTALITY].[YEAR]' />
+          <map key='[YEAR (LUNG_FEMALE_INCIDENCE)]' value='[LUNG_FEMALE_INCIDENCE].[YEAR]' />
+          <map key='[YEAR (LUNG_FEMALE_MORTALITY)]' value='[LUNG_FEMALE_MORTALITY].[YEAR]' />
+          <map key='[YEAR (LUNG_MALE_INCIDENCE)]' value='[LUNG_MALE_INCIDENCE].[YEAR]' />
+          <map key='[YEAR (LUNG_MALE_MORTALITY)]' value='[LUNG_MALE_MORTALITY].[YEAR]' />
+          <map key='[YEAR (PROSTATE_MALE_INCIDENCE)]' value='[PROSTATE_MALE_INCIDENCE].[YEAR]' />
+          <map key='[YEAR (PROSTATE_MALE_MORTALITY)]' value='[PROSTATE_MALE_MORTALITY].[YEAR]' />
+          <map key='[YEAR (STOMACH_FEMALE_INCIDENCE)]' value='[STOMACH_FEMALE_INCIDENCE].[YEAR]' />
+          <map key='[YEAR (STOMACH_FEMALE_MORTALITY)]' value='[STOMACH_FEMALE_MORTALITY].[YEAR]' />
+          <map key='[YEAR (STOMACH_MALE_INCIDENCE)]' value='[STOMACH_MALE_INCIDENCE].[YEAR]' />
+          <map key='[YEAR (STOMACH_MALE_MORTALITY)]' value='[STOMACH_MALE_MORTALITY].[YEAR]' />
+          <map key='[YEAR]' value='[LIFE_EXPECTANCY].[YEAR]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[LIFE_EXPECTANCY]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[LIFE_EXPECTANCY]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIFE_EXPECTANCY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[LIFE_EXPECTANCY]</local-name>
+            <parent-name>[LIFE_EXPECTANCY]</parent-name>
+            <remote-alias>LIFE_EXPECTANCY</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (BREAST_FEMALE_INCIDENCE)]</local-name>
+            <parent-name>[BREAST_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (BREAST_FEMALE_INCIDENCE)]</local-name>
+            <parent-name>[BREAST_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BREAST_FEMALE_INCIDENCE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[BREAST_FEMALE_INCIDENCE]</local-name>
+            <parent-name>[BREAST_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>BREAST_FEMALE_INCIDENCE</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (BREAST_FEMALE_MORTALITY)]</local-name>
+            <parent-name>[BREAST_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (BREAST_FEMALE_MORTALITY)]</local-name>
+            <parent-name>[BREAST_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BREAST_FEMALE_MORTALITY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[BREAST_FEMALE_MORTALITY]</local-name>
+            <parent-name>[BREAST_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>BREAST_FEMALE_MORTALITY</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (CERVIX_FEMALE_INCIDENCE)]</local-name>
+            <parent-name>[CERVIX_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (CERVIX_FEMALE_INCIDENCE)]</local-name>
+            <parent-name>[CERVIX_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CERVIX_FEMALE_INCIDENCE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[CERVIX_FEMALE_INCIDENCE]</local-name>
+            <parent-name>[CERVIX_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>CERVIX_FEMALE_INCIDENCE</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (CERVIX_FEMALE_MORTALITY)]</local-name>
+            <parent-name>[CERVIX_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (CERVIX_FEMALE_MORTALITY)]</local-name>
+            <parent-name>[CERVIX_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CERVIX_FEMALE_MORTALITY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[CERVIX_FEMALE_MORTALITY]</local-name>
+            <parent-name>[CERVIX_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>CERVIX_FEMALE_MORTALITY</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (COLON_FEMALE_INCIDENCE)]</local-name>
+            <parent-name>[COLON_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (COLON_FEMALE_INCIDENCE)]</local-name>
+            <parent-name>[COLON_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COLON_FEMALE_INCIDENCE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[COLON_FEMALE_INCIDENCE]</local-name>
+            <parent-name>[COLON_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>COLON_FEMALE_INCIDENCE</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (COLON_FEMALE_MORTALITY)]</local-name>
+            <parent-name>[COLON_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (COLON_FEMALE_MORTALITY)]</local-name>
+            <parent-name>[COLON_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COLON_FEMALE_MORTALITY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[COLON_FEMALE_MORTALITY]</local-name>
+            <parent-name>[COLON_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>COLON_FEMALE_MORTALITY</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (COLON_MALE_INCIDENCE)]</local-name>
+            <parent-name>[COLON_MALE_INCIDENCE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (COLON_MALE_INCIDENCE)]</local-name>
+            <parent-name>[COLON_MALE_INCIDENCE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COLON_MALE_INCIDENCE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[COLON_MALE_INCIDENCE]</local-name>
+            <parent-name>[COLON_MALE_INCIDENCE]</parent-name>
+            <remote-alias>COLON_MALE_INCIDENCE</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (COLON_MALE_MORTALITY)]</local-name>
+            <parent-name>[COLON_MALE_MORTALITY]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (COLON_MALE_MORTALITY)]</local-name>
+            <parent-name>[COLON_MALE_MORTALITY]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COLON_MALE_MORTALITY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[COLON_MALE_MORTALITY]</local-name>
+            <parent-name>[COLON_MALE_MORTALITY]</parent-name>
+            <remote-alias>COLON_MALE_MORTALITY</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (LIVER_FEMALE_INCIDENCE)]</local-name>
+            <parent-name>[LIVER_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (LIVER_FEMALE_INCIDENCE)]</local-name>
+            <parent-name>[LIVER_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVER_FEMALE_INCIDENCE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[LIVER_FEMALE_INCIDENCE]</local-name>
+            <parent-name>[LIVER_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>LIVER_FEMALE_INCIDENCE</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (LIVER_MALE_INCIDENCE)]</local-name>
+            <parent-name>[LIVER_MALE_INCIDENCE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (LIVER_MALE_INCIDENCE)]</local-name>
+            <parent-name>[LIVER_MALE_INCIDENCE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVER_MALE_INCIDENCE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[LIVER_MALE_INCIDENCE]</local-name>
+            <parent-name>[LIVER_MALE_INCIDENCE]</parent-name>
+            <remote-alias>LIVER_MALE_INCIDENCE</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (LIVER_FEMALE_MORTALITY)]</local-name>
+            <parent-name>[LIVER_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (LIVER_FEMALE_MORTALITY)]</local-name>
+            <parent-name>[LIVER_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVER_FEMALE_MORTALITY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[LIVER_FEMALE_MORTALITY]</local-name>
+            <parent-name>[LIVER_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>LIVER_FEMALE_MORTALITY</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (LIVER_MALE_MORTALITY)]</local-name>
+            <parent-name>[LIVER_MALE_MORTALITY]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (LIVER_MALE_MORTALITY)]</local-name>
+            <parent-name>[LIVER_MALE_MORTALITY]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVER_MALE_MORTALITY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[LIVER_MALE_MORTALITY]</local-name>
+            <parent-name>[LIVER_MALE_MORTALITY]</parent-name>
+            <remote-alias>LIVER_MALE_MORTALITY</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (LUNG_FEMALE_INCIDENCE)]</local-name>
+            <parent-name>[LUNG_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (LUNG_FEMALE_INCIDENCE)]</local-name>
+            <parent-name>[LUNG_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LUNG_FEMALE_INCIDENCE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[LUNG_FEMALE_INCIDENCE]</local-name>
+            <parent-name>[LUNG_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>LUNG_FEMALE_INCIDENCE</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (LUNG_FEMALE_MORTALITY)]</local-name>
+            <parent-name>[LUNG_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (LUNG_FEMALE_MORTALITY)]</local-name>
+            <parent-name>[LUNG_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LUNG_FEMALE_MORTALITY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[LUNG_FEMALE_MORTALITY]</local-name>
+            <parent-name>[LUNG_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>LUNG_FEMALE_MORTALITY</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (LUNG_MALE_INCIDENCE)]</local-name>
+            <parent-name>[LUNG_MALE_INCIDENCE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (LUNG_MALE_INCIDENCE)]</local-name>
+            <parent-name>[LUNG_MALE_INCIDENCE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LUNG_MALE_INCIDENCE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[LUNG_MALE_INCIDENCE]</local-name>
+            <parent-name>[LUNG_MALE_INCIDENCE]</parent-name>
+            <remote-alias>LUNG_MALE_INCIDENCE</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (LUNG_MALE_MORTALITY)]</local-name>
+            <parent-name>[LUNG_MALE_MORTALITY]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (LUNG_MALE_MORTALITY)]</local-name>
+            <parent-name>[LUNG_MALE_MORTALITY]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LUNG_MALE_MORTALITY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[LUNG_MALE_MORTALITY]</local-name>
+            <parent-name>[LUNG_MALE_MORTALITY]</parent-name>
+            <remote-alias>LUNG_MALE_MORTALITY</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (PROSTATE_MALE_INCIDENCE)]</local-name>
+            <parent-name>[PROSTATE_MALE_INCIDENCE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (PROSTATE_MALE_INCIDENCE)]</local-name>
+            <parent-name>[PROSTATE_MALE_INCIDENCE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PROSTATE_MALE_INCIDENCE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[PROSTATE_MALE_INCIDENCE]</local-name>
+            <parent-name>[PROSTATE_MALE_INCIDENCE]</parent-name>
+            <remote-alias>PROSTATE_MALE_INCIDENCE</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (PROSTATE_MALE_MORTALITY)]</local-name>
+            <parent-name>[PROSTATE_MALE_MORTALITY]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (PROSTATE_MALE_MORTALITY)]</local-name>
+            <parent-name>[PROSTATE_MALE_MORTALITY]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PROSTATE_MALE_MORTALITY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[PROSTATE_MALE_MORTALITY]</local-name>
+            <parent-name>[PROSTATE_MALE_MORTALITY]</parent-name>
+            <remote-alias>PROSTATE_MALE_MORTALITY</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (STOMACH_FEMALE_INCIDENCE)]</local-name>
+            <parent-name>[STOMACH_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (STOMACH_FEMALE_INCIDENCE)]</local-name>
+            <parent-name>[STOMACH_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STOMACH_FEMALE_INCIDENCE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[STOMACH_FEMALE_INCIDENCE]</local-name>
+            <parent-name>[STOMACH_FEMALE_INCIDENCE]</parent-name>
+            <remote-alias>STOMACH_FEMALE_INCIDENCE</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (STOMACH_FEMALE_MORTALITY)]</local-name>
+            <parent-name>[STOMACH_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (STOMACH_FEMALE_MORTALITY)]</local-name>
+            <parent-name>[STOMACH_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STOMACH_FEMALE_MORTALITY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[STOMACH_FEMALE_MORTALITY]</local-name>
+            <parent-name>[STOMACH_FEMALE_MORTALITY]</parent-name>
+            <remote-alias>STOMACH_FEMALE_MORTALITY</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (STOMACH_MALE_INCIDENCE)]</local-name>
+            <parent-name>[STOMACH_MALE_INCIDENCE]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (STOMACH_MALE_INCIDENCE)]</local-name>
+            <parent-name>[STOMACH_MALE_INCIDENCE]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STOMACH_MALE_INCIDENCE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[STOMACH_MALE_INCIDENCE]</local-name>
+            <parent-name>[STOMACH_MALE_INCIDENCE]</parent-name>
+            <remote-alias>STOMACH_MALE_INCIDENCE</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (STOMACH_MALE_MORTALITY)]</local-name>
+            <parent-name>[STOMACH_MALE_MORTALITY]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[YEAR (STOMACH_MALE_MORTALITY)]</local-name>
+            <parent-name>[STOMACH_MALE_MORTALITY]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STOMACH_MALE_MORTALITY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[STOMACH_MALE_MORTALITY]</local-name>
+            <parent-name>[STOMACH_MALE_MORTALITY]</parent-name>
+            <remote-alias>STOMACH_MALE_MORTALITY</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (GDPBREAKDOWN)]</local-name>
+            <parent-name>[GDPBREAKDOWN]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INDUSTRYSHAREGDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[INDUSTRYSHAREGDP]</local-name>
+            <parent-name>[GDPBREAKDOWN]</parent-name>
+            <remote-alias>INDUSTRYSHAREGDP</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGRICULTURESHAREGDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AGRICULTURESHAREGDP]</local-name>
+            <parent-name>[GDPBREAKDOWN]</parent-name>
+            <remote-alias>AGRICULTURESHAREGDP</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SERVICESSHAREGDP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SERVICESSHAREGDP]</local-name>
+            <parent-name>[GDPBREAKDOWN]</parent-name>
+            <remote-alias>SERVICESSHAREGDP</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RANK1SECTOR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RANK1SECTOR]</local-name>
+            <parent-name>[GDPBREAKDOWN]</parent-name>
+            <remote-alias>RANK1SECTOR</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RANK2SECTOR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RANK2SECTOR]</local-name>
+            <parent-name>[GDPBREAKDOWN]</parent-name>
+            <remote-alias>RANK2SECTOR</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RANK3SECTOR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RANK3SECTOR]</local-name>
+            <parent-name>[GDPBREAKDOWN]</parent-name>
+            <remote-alias>RANK3SECTOR</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY (HDI)]</local-name>
+            <parent-name>[HDI]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HDINUMBER</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HDINUMBER]</local-name>
+            <parent-name>[HDI]</parent-name>
+            <remote-alias>HDINUMBER</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HDICATEGORY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HDICATEGORY]</local-name>
+            <parent-name>[HDI]</parent-name>
+            <remote-alias>HDICATEGORY</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4000</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=873,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Agriculturesharegdp' datatype='real' name='[AGRICULTURESHAREGDP]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Breast Female Incidence' datatype='real' name='[BREAST_FEMALE_INCIDENCE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Breast Female Mortality' datatype='real' name='[BREAST_FEMALE_MORTALITY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Cervix Female Incidence' datatype='real' name='[CERVIX_FEMALE_INCIDENCE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Cervix Female Mortality' datatype='real' name='[CERVIX_FEMALE_MORTALITY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Colon Female Incidence' datatype='real' name='[COLON_FEMALE_INCIDENCE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Colon Female Mortality' datatype='real' name='[COLON_FEMALE_MORTALITY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Colon Male Incidence' datatype='real' name='[COLON_MALE_INCIDENCE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Colon Male Mortality' datatype='real' name='[COLON_MALE_MORTALITY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Country (Breast Female Incidence)' datatype='string' name='[COUNTRY (BREAST_FEMALE_INCIDENCE)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Breast Female Mortality)' datatype='string' name='[COUNTRY (BREAST_FEMALE_MORTALITY)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Cervix Female Incidence)' datatype='string' name='[COUNTRY (CERVIX_FEMALE_INCIDENCE)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Cervix Female Mortality)' datatype='string' name='[COUNTRY (CERVIX_FEMALE_MORTALITY)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Colon Female Incidence)' datatype='string' name='[COUNTRY (COLON_FEMALE_INCIDENCE)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Colon Female Mortality)' datatype='string' name='[COUNTRY (COLON_FEMALE_MORTALITY)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Colon Male Incidence)' datatype='string' name='[COUNTRY (COLON_MALE_INCIDENCE)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Colon Male Mortality)' datatype='string' name='[COUNTRY (COLON_MALE_MORTALITY)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Gdpbreakdown)' datatype='string' name='[COUNTRY (GDPBREAKDOWN)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Hdi)' datatype='string' name='[COUNTRY (HDI)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Liver Female Incidence)' datatype='string' name='[COUNTRY (LIVER_FEMALE_INCIDENCE)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Liver Female Mortality)' datatype='string' name='[COUNTRY (LIVER_FEMALE_MORTALITY)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Liver Male Incidence)' datatype='string' name='[COUNTRY (LIVER_MALE_INCIDENCE)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Liver Male Mortality)' datatype='string' name='[COUNTRY (LIVER_MALE_MORTALITY)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Lung Female Incidence)' datatype='string' name='[COUNTRY (LUNG_FEMALE_INCIDENCE)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Lung Female Mortality)' datatype='string' name='[COUNTRY (LUNG_FEMALE_MORTALITY)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Lung Male Incidence)' datatype='string' name='[COUNTRY (LUNG_MALE_INCIDENCE)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Lung Male Mortality)' datatype='string' name='[COUNTRY (LUNG_MALE_MORTALITY)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Prostate Male Incidence)' datatype='string' name='[COUNTRY (PROSTATE_MALE_INCIDENCE)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Prostate Male Mortality)' datatype='string' name='[COUNTRY (PROSTATE_MALE_MORTALITY)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Stomach Female Incidence)' datatype='string' name='[COUNTRY (STOMACH_FEMALE_INCIDENCE)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Stomach Female Mortality)' datatype='string' name='[COUNTRY (STOMACH_FEMALE_MORTALITY)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Stomach Male Incidence)' datatype='string' name='[COUNTRY (STOMACH_MALE_INCIDENCE)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country (Stomach Male Mortality)' datatype='string' name='[COUNTRY (STOMACH_MALE_MORTALITY)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+      </column>
+      <column caption='Hdicategory' datatype='string' name='[HDICATEGORY]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Hdinumber' datatype='real' name='[HDINUMBER]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Industrysharegdp' datatype='real' name='[INDUSTRYSHAREGDP]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Life Expectancy' datatype='real' name='[LIFE_EXPECTANCY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Liver Female Incidence' datatype='real' name='[LIVER_FEMALE_INCIDENCE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Liver Female Mortality' datatype='real' name='[LIVER_FEMALE_MORTALITY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Liver Male Incidence' datatype='real' name='[LIVER_MALE_INCIDENCE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Liver Male Mortality' datatype='real' name='[LIVER_MALE_MORTALITY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Lung Female Incidence' datatype='real' name='[LUNG_FEMALE_INCIDENCE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Lung Female Mortality' datatype='real' name='[LUNG_FEMALE_MORTALITY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Lung Male Incidence' datatype='real' name='[LUNG_MALE_INCIDENCE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Lung Male Mortality' datatype='real' name='[LUNG_MALE_MORTALITY]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Prostate Male Incidence' datatype='real' name='[PROSTATE_MALE_INCIDENCE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Prostate Male Mortality' datatype='real' name='[PROSTATE_MALE_MORTALITY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Rank1Sector' datatype='string' name='[RANK1SECTOR]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Rank2Sector' datatype='string' name='[RANK2SECTOR]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Rank3Sector' datatype='string' name='[RANK3SECTOR]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Servicessharegdp' datatype='real' name='[SERVICESSHAREGDP]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Stomach Female Incidence' datatype='real' name='[STOMACH_FEMALE_INCIDENCE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Stomach Female Mortality' datatype='real' name='[STOMACH_FEMALE_MORTALITY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Stomach Male Incidence' datatype='real' name='[STOMACH_MALE_INCIDENCE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Stomach Male Mortality' datatype='real' name='[STOMACH_MALE_MORTALITY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Year (Breast Female Incidence)' datatype='real' name='[YEAR (BREAST_FEMALE_INCIDENCE)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Breast Female Mortality)' datatype='real' name='[YEAR (BREAST_FEMALE_MORTALITY)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Cervix Female Incidence)' datatype='real' name='[YEAR (CERVIX_FEMALE_INCIDENCE)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Cervix Female Mortality)' datatype='real' name='[YEAR (CERVIX_FEMALE_MORTALITY)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Colon Female Incidence)' datatype='real' name='[YEAR (COLON_FEMALE_INCIDENCE)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Colon Female Mortality)' datatype='real' name='[YEAR (COLON_FEMALE_MORTALITY)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Colon Male Incidence)' datatype='real' name='[YEAR (COLON_MALE_INCIDENCE)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Colon Male Mortality)' datatype='real' name='[YEAR (COLON_MALE_MORTALITY)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Liver Female Incidence)' datatype='real' name='[YEAR (LIVER_FEMALE_INCIDENCE)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Liver Female Mortality)' datatype='real' name='[YEAR (LIVER_FEMALE_MORTALITY)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Liver Male Incidence)' datatype='real' name='[YEAR (LIVER_MALE_INCIDENCE)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Liver Male Mortality)' datatype='real' name='[YEAR (LIVER_MALE_MORTALITY)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Lung Female Incidence)' datatype='real' name='[YEAR (LUNG_FEMALE_INCIDENCE)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Lung Female Mortality)' datatype='real' name='[YEAR (LUNG_FEMALE_MORTALITY)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Lung Male Incidence)' datatype='real' name='[YEAR (LUNG_MALE_INCIDENCE)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Lung Male Mortality)' datatype='real' name='[YEAR (LUNG_MALE_MORTALITY)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Prostate Male Incidence)' datatype='real' name='[YEAR (PROSTATE_MALE_INCIDENCE)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Prostate Male Mortality)' datatype='real' name='[YEAR (PROSTATE_MALE_MORTALITY)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Stomach Female Incidence)' datatype='real' name='[YEAR (STOMACH_FEMALE_INCIDENCE)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Stomach Female Mortality)' datatype='real' name='[YEAR (STOMACH_FEMALE_MORTALITY)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Stomach Male Incidence)' datatype='real' name='[YEAR (STOMACH_MALE_INCIDENCE)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year (Stomach Male Mortality)' datatype='real' name='[YEAR (STOMACH_MALE_MORTALITY)]' role='dimension' type='quantitative'>
+      </column>
+      <column caption='Year' datatype='real' default-format='n0;-0' name='[YEAR]' role='dimension' type='ordinal'>
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+          </datasources>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows></rows>
+        <cols></cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[oracle.42133.778098773146].[none:COUNTRY:nk]</field>
+          <field>[oracle.42133.778098773146].[none:YEAR:ok]</field>
+          <field>[oracle.42133.778098773146].[none:YEAR:qk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='144' name='Sheet 1' width='174'>
+      iVBORw0KGgoAAAANSUhEUgAAAK4AAACQCAYAAACRfFAzAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAABmUlEQVR4nO3SQQ0AIBDAMMC/58MDH7KkVbDH9szMgpjzOwBeGJck45JkXJKMS5JxSTIu
+      ScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45Jk
+      XJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYl
+      ybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKM
+      S5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgk
+      GZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5Jx
+      STIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuScYlybgkGZck
+      45JkXJKMS5JxSTIuScYlybgkGZck45JkXJKMS5JxSTIuSRePYgUc7kJNEQAAAABJRU5ErkJg
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
