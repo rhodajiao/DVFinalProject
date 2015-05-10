@@ -6,6 +6,8 @@ output: html_document
 Rhoda Jiao and Maytee Chantharayukhont
 
 ```{r}
+source("../01 Data/libraries.R")
+source("../01 Data/healthdata.R")
 
 ```
 
