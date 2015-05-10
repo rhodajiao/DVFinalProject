@@ -8,6 +8,7 @@ Rhoda Jiao and Maytee Chantharayukhont
 ```{r}
 source("../01 Data/libraries.R")
 source("../01 Data/healthdata.R")
+source("../02 Data Wrangling/wrangling.R")
 
 ```
 
