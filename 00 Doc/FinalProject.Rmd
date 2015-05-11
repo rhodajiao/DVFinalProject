@@ -1,5 +1,5 @@
 ---
-title: "FinalProject"
+title: "Final Project: Internation Cancer Incidence and Mortality"
 output: html_document
 ---
 
@@ -9,6 +9,8 @@ Rhoda Jiao and Maytee Chantharayukhont
 source("../01 Data/libraries.R")
 source("../01 Data/healthdata.R")
 source("../02 Data Wrangling/wrangling.R")
+source("../03 Visualizations/crosstabs.R")
+source("../03 Visualizations/viz.R")
 
 ```
 

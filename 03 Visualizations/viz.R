@@ -30,3 +30,7 @@ print(ggplot(aggData, aes(x=HDINUMBER,y=COLON_FEMALE_MORTALITY,color=CONTINENT))
 print(ggplot(aggData, aes(x=HDINUMBER,y=LUNG_FEMALE_MORTALITY,color=CONTINENT))+geom_point()+theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+ylab('Female Lung Cancer Mortality per 100,000 people'))
 
 print(ggplot(aggData, aes(x=HDINUMBER,y=STOMACH_FEMALE_MORTALITY,color=CONTINENT))+geom_point()+theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+ylab('Female Stomach Cancer Mortality per 100,000 people'))
+
+## mortality to incidence ratio
+
+print(ggplot(MortalIncidence, aes(x=Incidence, y=Mortality, color=HDI_NUMBER)) + geom_point() + facet_wrap(~TYPE) + xlim(0,125) + ylim(0,100) + ggtitle("Mortality to Incidence Ratio by HDI Level (2002)") + labs(x="Incidence (per 100,000 people)", y="Mortality (per 100,000 people)"))
