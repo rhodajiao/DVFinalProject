@@ -1,8 +1,8 @@
-print(ggplot(MaleFemaleLiverMortalityPlot, aes(x=COUNTRY,y=LIVER_MALE_MORTALITY/LIVER_FEMALE_MORTALITY))+geom_point()+ facet_wrap(~CONTINENT)+theme(axis.text.x=element_blank())+ylab('Ratio of Male to Female Liver Cancer Deaths Per 100,000 People')+scale_y_continuous(breaks=seq(0,8,1)))
+print(ggplot(MaleFemaleLiverMortalityPlot, aes(x=COUNTRY,y=LIVER_MALE_MORTALITY/LIVER_FEMALE_MORTALITY))+geom_point()+ facet_wrap(~CONTINENT)+theme(axis.text.x=element_blank())+ylab('Ratio of Male to Female Liver Cancer Deaths Per 100,000 People')+scale_y_continuous(breaks=seq(0,8,1))+ggtitle('Male to Female Liver Cancer Deaths Across the World'))
 
-print(ggplot(MaleFemaleLungMortalityPlot, aes(x=COUNTRY,y=LUNG_MALE_MORTALITY/LUNG_FEMALE_MORTALITY))+geom_point()+ facet_wrap(~CONTINENT)+theme(axis.text.x=element_blank())+ylab('Ratio of Male to Female Lung Cancer Deaths Per 100,000 People')+scale_y_continuous(breaks=seq(0,30,1)))
+print(ggplot(MaleFemaleLungMortalityPlot, aes(x=COUNTRY,y=LUNG_MALE_MORTALITY/LUNG_FEMALE_MORTALITY))+geom_point()+ facet_wrap(~CONTINENT)+theme(axis.text.x=element_blank())+ylab('Ratio of Male to Female Lung Cancer Deaths Per 100,000 People')+scale_y_continuous(breaks=seq(0,30,1))+ggtitle('Male to Female Lung Cancer Deaths Across the World'))
 
-print(ggplot(MaleFemaleColonMortalityPlot, aes(x=COUNTRY,y=COLON_MALE_MORTALITY/COLON_FEMALE_MORTALITY))+geom_point()+ facet_wrap(~CONTINENT)+theme(axis.text.x=element_blank())+ylab('Ratio of Male to Female Colon Cancer Deaths Per 100,000 People')+scale_y_continuous(breaks=seq(0,4,1)))
+print(ggplot(MaleFemaleColonMortalityPlot, aes(x=COUNTRY,y=COLON_MALE_MORTALITY/COLON_FEMALE_MORTALITY))+geom_point()+ facet_wrap(~CONTINENT)+theme(axis.text.x=element_blank())+ylab('Ratio of Male to Female Colon Cancer Deaths Per 100,000 People')+scale_y_continuous(breaks=seq(0,4,1))+ggtitle('Male to Female Colon Cancer Deaths Across the World'))
 
 print(ggplot(MortalIncidence, aes(x=HDI_NUMBER, y=Mortality, color=CONTINENT)) + geom_point(aes(size=LIFE_EXPECTANCY)) + scale_size_continuous(range=c(4,2)) + facet_wrap(~TYPE) + ggtitle("Mortality by HDI Level (2002)") + labs(x="HDI Number", y="Mortality (per 100,000 people)") +theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))) 
 
