@@ -18,9 +18,9 @@ aggDataFiltered <- aggData %>% arrange(HDINUMBER)
 ## Gathering each incidence and mortality rate into it's own type
 
 tempData <- aggData %>% filter(YEAR == 2002) %>% select(COUNTRY:LIFE_EXPECTANCY, HDINUMBER, HDICATEGORY, CONTINENT) 
-colnames(tempData) <- c("COUNTRY", "YEAR", "FEMALE BREAST", "a", "FEMALE CERVICAL", "b", "FEMALE COLON AND RECTUM", "c", "MALE COLON AND RECTUM", "d", "FEMALE LIVER", "e", "MALE LIVER", "f", "FEMALE LUNG", "g", "MALE LUNG", "h", "MALE PROSTATE", "i", "FEMALE STOMACH", "j", "MALE STOMACH", "k", "LIFE_EXPECTANCY", "HDI_NUMBER", "HDI_CATEGORY","CONTINENT")
+colnames(tempData) <- c("COUNTRY", "YEAR", "F BREAST", "a", "F CERVICAL", "b", "F COLON", "c", "M COLON", "d", "F LIVER", "e", "M LIVER", "f", "F LUNG", "g", "M LUNG", "h", "M PROSTATE", "i", "F STOMACH", "j", "M STOMACH", "k", "LIFE_EXPECTANCY", "HDI_NUMBER", "HDI_CATEGORY","CONTINENT")
 Mortality <- tempData %>% gather("TYPE", "Mortality", c(3,5,7,9,11,13,15,17,19,21,23)) %>% select(COUNTRY, TYPE, Mortality, CONTINENT) %>% arrange(COUNTRY)
 tempData1 <- aggData %>% filter(YEAR == 2002) %>% select(COUNTRY:LIFE_EXPECTANCY, HDINUMBER, HDICATEGORY, CONTINENT)
-colnames(tempData1) <- c("COUNTRY", "YEAR", "l", "FEMALE BREAST", "a", "FEMALE CERVICAL", "b", "FEMALE COLON AND RECTUM", "c", "MALE COLON AND RECTUM", "d", "FEMALE LIVER", "e", "MALE LIVER", "f", "FEMALE LUNG", "g", "MALE LUNG", "h", "MALE PROSTATE", "i", "FEMALE STOMACH", "j", "MALE STOMACH", "LIFE_EXPECTANCY", "HDI_NUMBER", "HDI_CATEGORY", "CONTINENT")
+colnames(tempData1) <- c("COUNTRY", "YEAR", "l", "F BREAST", "a", "F CERVICAL", "b", "F COLON", "c", "M COLON", "d", "F LIVER", "e", "M LIVER", "f", "F LUNG", "g", "M LUNG", "h", "M PROSTATE", "i", "F STOMACH", "j", "M STOMACH", "LIFE_EXPECTANCY", "HDI_NUMBER", "HDI_CATEGORY", "CONTINENT")
 Incidence <- tempData1 %>% filter(YEAR == 2002) %>% gather("TYPE", "Incidence", c(4,6,8,10,12,14,16,18,20,22,24)) %>% select(COUNTRY, TYPE, HDI_NUMBER, HDI_CATEGORY, Incidence, CONTINENT, LIFE_EXPECTANCY) %>% arrange(COUNTRY)
 MortalIncidence <- merge(Mortality, Incidence, by=c("CONTINENT", "COUNTRY", "TYPE"))

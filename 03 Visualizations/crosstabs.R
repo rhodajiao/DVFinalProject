@@ -17,5 +17,5 @@ stomach_mortality <- data.frame(fromJSON(getURL(URLencode(gsub("\n", " ", '129.1
 OVER (PARTITION BY continent) as MORTALITY_MIN, rank() 
 OVER (PARTITION BY continent order by stomach_male_mortality desc) as MORTALITY_RANK 
 FROM continents c join stomach_male_mortality cr on(c.country=cr.country) where year=\\\'2002\\\')"
-')),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521:ORCL', USER='C##cs329e_rj6793', PASS='orcl_rj6793', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE))); tbl_df(colon_mortality)
+')),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521:ORCL', USER='C##cs329e_rj6793', PASS='orcl_rj6793', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE))); tbl_df(stomach_mortality)
 
