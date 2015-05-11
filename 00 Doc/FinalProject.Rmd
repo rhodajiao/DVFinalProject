@@ -7,6 +7,9 @@ Rhoda Jiao and Maytee Chantharayukhont
 
 ---
 
+USERNAME:C##cs329e_rj6793
+PASSWORD:orcl_rj6793
+
 The following data is based on a set of 22 data sets detailing in cancer incidence (new cases per 100,000 people) and mortality (deaths per 100,000 people) in countries across the world from about 1960 to 2002. This data was collected by the International Agency for Research on Cancer and the World Health Organization. An additional 4 tables were joined to these data sets discussing continent, gross domestic profit, human development index (HDI), and life expectancy.
 
 First, we reformatted the .xlsx files containing the data sets in R and uploaded them into the Oracle database using SQL Developer. We then visualized our data in R and Tableau.
