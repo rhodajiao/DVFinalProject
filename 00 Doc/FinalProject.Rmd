@@ -5,15 +5,32 @@ output: html_document
 
 Rhoda Jiao and Maytee Chantharayukhont
 
+---
+
 The following data is based on a set of 22 data sets detailing in cancer incidence (new cases per 100,000 people) and mortality (deaths per 100,000 people) in countries across the world from about 1960 to 2002. This data was collected by the International Agency for Research on Cancer and the World Health Organization. An additional 4 tables were joined to these data sets discussing continent, gross domestic profit, human development index (HDI), and life expectancy.
+
+First, we reformatted the .xlsx files containing the data sets in R and uploaded them into the Oracle database using SQL Developer. We then visualized our data in R and Tableau.
+
+The first ten rows of each of our data sets are shown below.
 
 ```{r}
 source("../01 Data/libraries.R")
 source("../01 Data/healthdata.R")
+```
+
+#**R**
+In R, we joined our data sets by country and year and used data wrangling to create the date frames we needed for the visualizations we created. 
+
+
+```{r}
 source("../02 Data Wrangling/wrangling.R")
 source("../03 Visualizations/crosstabs.R")
 source("../03 Visualizations/viz.R")
-
 ```
+
+#**Tableau**
+In Tableau, we used full outer joins to connect our data by country and by year, using life_expectancy as our root table. We used that data for the following visualizations.
+
+
 
 
