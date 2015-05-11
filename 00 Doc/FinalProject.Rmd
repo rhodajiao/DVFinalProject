@@ -1,5 +1,5 @@
 ---
-title: "Final Project: Internation Cancer Incidence and Mortality"
+title: "Final Project: International Cancer Incidence and Mortality"
 output: html_document
 ---
 
@@ -31,6 +31,25 @@ source("../03 Visualizations/viz.R")
 #**Tableau**
 In Tableau, we used full outer joins to connect our data by country and by year, using life_expectancy as our root table. We used that data for the following visualizations.
 
+<img src="../00 Doc/MaxLifeExpectancy.png" />
+
+<img src="../00 Doc/WorldMapNewCasesWomen.png" />
+
+<img src="../00 Doc/WorldMapCancerNewCasesMen.png" />
+
+<img src="../00 Doc/WorldMapBreastInc.png" />
+
+<img src="../00 Doc/WorldMapPercentageDeathPerInc.png" />
+
+<img src="../00 Doc/MorIncHDIScatter.png" />
+
+<img src="../00 Doc/HDIProstate.png" />
+
+<img src="../00 Doc/HDILung.png" />
+
+<img src="../00 Doc/LungStomach.png" />
+
+<img src="../00 Doc/LungMortNAmerica.png" />
 
 
 
