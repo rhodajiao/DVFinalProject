@@ -5,6 +5,8 @@ output: html_document
 
 Rhoda Jiao and Maytee Chantharayukhont
 
+The following data is based on a set of 22 data sets detailing in cancer incidence (new cases per 100,000 people) and mortality (deaths per 100,000 people) in countries across the world from about 1960 to 2002. This data was collected by the International Agency for Research on Cancer and the World Health Organization. An additional 4 tables were joined to these data sets discussing continent, gross domestic profit, human development index (HDI), and life expectancy.
+
 ```{r}
 source("../01 Data/libraries.R")
 source("../01 Data/healthdata.R")
